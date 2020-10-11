@@ -4,13 +4,20 @@ title: "Postgres Installation and Configuration"
 date: 2020-10-10 23:37:00 -0400
 categories: Technology Database
 ---
-## Postgres
 
-### Postgres Installation
-First, install Postgres
+# Postgres Installation
 ```console
 $ sudo apt update
 $ sudo apt install postgresql postgresql-contri
 ```
-Next
-
+# Configuration
+## Switch to postgres account
+```console
+$ sudo -i -u postgres
+$ psql
+postgres=# \q
+```
+## Run Postgres without switching account
+```console
+$ sudo -u postgres psql
+```
