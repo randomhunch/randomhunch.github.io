@@ -8,7 +8,7 @@ categories: Technology Database
 # Postgres Installation
 ```console
 $ sudo apt update
-$ sudo apt install postgresql postgresql-contri
+$ sudo apt install postgresql postgresql-contrib
 ```
 # Configuration
 ## Switch to postgres account
@@ -20,4 +20,5 @@ postgres=# \q
 ## Run Postgres without switching account
 ```console
 $ sudo -u postgres psql
+postgres=# \q
 ```
