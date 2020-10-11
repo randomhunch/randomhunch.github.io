@@ -6,5 +6,10 @@ categories: Technology Database
 ## Postgres
 
 ### Postgres Installation
-- First
-- Second
+First, install Postgres
+```console
+$ sudo apt update
+$ sudo apt install postgresql postgresql-contri
+```
+Next
+
