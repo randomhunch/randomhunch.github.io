@@ -32,5 +32,19 @@ sudo -u postgres createuser --interactive
 ```console
 sudo -u postgres createdb zb26
 ```
+### Move PostgreSQL Data Directory
+```console
+$ psql
+postgres=# show data_directory
 
+$sudo systemctrl stop postgresql
+$sudo systemctrl status postgresql
+
+$sudo rsync -av /var/lib/postgresql /mnt/volume1_nyc1_01/
+```
+Then edit :wq
+data_directory in postgresql.conf
+```
+data_directory = '/mnt/volume_nyc1_01/postgresql/12/main'
+```
 [postgres-ubuntu]: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-20-04
