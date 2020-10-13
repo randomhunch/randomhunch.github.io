@@ -47,4 +47,7 @@ data_directory in postgresql.conf
 ```
 data_directory = '/mnt/volume_nyc1_01/postgresql/12/main'
 ```
+### Allow Remote Access
+In file /etc/postgresql/postgresql.conf, add line `listen_addresses = '*'`
+In file pg_hba.conf, add line `host all all 0.0.0.0/0`
 [postgres-ubuntu]: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-20-04
