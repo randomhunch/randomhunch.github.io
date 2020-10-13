@@ -6,6 +6,7 @@ categories: Technology Database
 ---
 
 ## [Postgres Installation][postgres-ubuntu]
+
 ```console
 $ sudo apt update
 $ sudo apt install postgresql postgresql-contrib
