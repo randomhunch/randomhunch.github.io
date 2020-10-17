@@ -53,4 +53,9 @@ In file /etc/postgresql/postgresql.conf, add line `listen_addresses = '*'`
 
 In file pg_hba.conf, add line `host all all 0.0.0.0/0`
 
+### Change or set user password
+```
+alter user zb26 with password 'password';
+```
+
 [postgres-ubuntu]: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-20-04
