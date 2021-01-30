@@ -6,3 +6,5 @@ categories: Technology API SocialNetwork
 ---
 
 ## Reddit API
+
+First, go to [reddit site](reddit.com/prefs/apps) to create an app
