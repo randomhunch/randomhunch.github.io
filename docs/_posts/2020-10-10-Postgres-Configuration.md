@@ -31,7 +31,7 @@ sudo -u postgres createuser --interactive
 
 ### Create new database
 ```console
-sudo -u postgres createdb zb26
+sudo -u postgres createdb dbname
 ```
 ### Move PostgreSQL Data Directory
 ```console
